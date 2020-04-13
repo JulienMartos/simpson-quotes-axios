@@ -1,5 +1,5 @@
 import React from 'react';
-import DisplayQuote from './component/SimpsonQuotes';
+import SimpsonQuote from './component/SimpsonQuotes';
 import axios from 'axios';
 
 const sampleQuote = {
@@ -36,7 +36,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='App'>
-        <DisplayQuote quote={this.state.quote} />
+        <SimpsonQuote quote={this.state.quote} />
 
         <button type='button' onClick={this.getQuote}>
           New Quote
