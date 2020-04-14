@@ -37,7 +37,6 @@ class App extends React.Component {
     return (
       <div className='App'>
         <SimpsonQuote quote={this.state.quote} />
-
         <button type='button' onClick={this.getQuote}>
           New Quote
         </button>
