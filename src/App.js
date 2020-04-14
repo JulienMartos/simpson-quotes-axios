@@ -1,12 +1,12 @@
-import React from 'react';
-import SimpsonQuote from './component/SimpsonQuotes';
-import axios from 'axios';
+import React from "react";
+import SimpsonQuote from "./component/SimpsonQuotes";
+import axios from "axios";
 
 const sampleQuote = {
-  character: 'Duffman',
-  quote: 'Oh Yeah!',
+  character: "Duffman",
+  quote: "Oh Yeah!",
   image:
-    'https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FDuffman.png?1497567511709',
+    "https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FDuffman.png?1497567511709",
 };
 
 class App extends React.Component {
@@ -21,7 +21,7 @@ class App extends React.Component {
   getQuote() {
     // Send the request
     axios
-      .get('https://thesimpsonsquoteapi.glitch.me/quotes')
+      .get("https://simpsons-quotes-api.herokuapp.com/quotes")
       // Extract the DATA from the received response
       .then(response => response.data)
       // Use this data to update the state
